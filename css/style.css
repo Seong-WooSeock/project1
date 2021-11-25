@@ -22,7 +22,7 @@ a{
     display: flex;
     top: 0;
 }
-
+/* 헤더 구현 */
 .header_ad{
     text-align: center;
     width: 100%;
@@ -154,3 +154,60 @@ header{
     margin-right: 17px;
     margin-top: -8px;
 }
+
+/* 헤더 구현 */
+.content{
+    width: 100%;
+}
+/* main-content-section 구현 */
+.main_cont{
+    width: 100%;
+    height: 745px;
+    position: relative;
+    background-color: #00855B;
+    text-align: center;
+    padding-top: -15px;
+    margin: 0 auto;
+    background-image: url(https://cdn.fassto.ai/resources/imagesHome/main/banner_visual.png);
+    background-size: 1080px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.cont_text_box{
+    color: white;
+    font-weight: 400;
+    line-height:26px
+}
+
+.head_cont_text{
+    font-size: 3.75em;
+    padding-top: 113px;
+    font-weight: 900;
+}
+.detail_cont_text{
+    padding-top: 34px;
+    font-size: 1.1em;
+}
+.pc_dp_none{
+    display: none;
+}
+
+.mb_dp_none{
+    display: block;
+}
+
+.cont_btn_box{
+    margin-top: 30px;
+}
+
+.main_cont_btn{
+    font-weight: 900;
+    font-size: 1em;
+    padding: 13px 16px;
+    background-color: #FDD835;
+    border: #00855B;
+    border-radius: 8px;
+}
+
+/* main-content-section 구현 */
