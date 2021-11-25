@@ -1,0 +1,31 @@
+body{
+    background-color:#F5F5F7;
+}
+
+.header_wrap{
+    margin-top :0;
+    background-color: #FFFFFF;
+}
+
+.logo_img{
+    filter: none;
+}
+
+.navi_items span{
+    color:#4E5968;
+}
+.navi_items a{
+    color: #4E5968;
+}
+
+.text_bar{
+    background: #B0B8C1;
+}
+.navi_item_btn{
+    color: #ffffff;
+    background:  #00855B;
+}
+
+.icon_external{
+    color: #4E5968;
+}
