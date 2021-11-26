@@ -67,6 +67,7 @@ header{
     top: 28px;
     left: 33px;
     height: 100%;
+    z-index: 999999;
 }
 .logo_img a{
     cursor: pointer;
@@ -75,6 +76,7 @@ header{
 .logo_img{
     width: 110px;
     filter :brightness(0) invert(1);
+    
 }
 
 .navi_l_box{
@@ -183,7 +185,7 @@ header{
 .cont_text_box{
     color: white;
     font-weight: 400;
-    line-height:26px
+    line-height:26px;
 }
 
 .head_cont_text{

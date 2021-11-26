@@ -29,3 +29,114 @@ body{
 .icon_external{
     color: #4E5968;
 }
+
+
+ /* 회원가입 컨텐츠 */
+.guide_text_box{
+    max-width: 420px;
+    margin: 0 auto;
+    padding-top: 105px;
+    text-align: left;
+}
+
+.con_guide_text{
+    font-size: 1.125em;
+}
+
+.con_guide_text a{
+    font-size: 1em;
+    color: #007DFF;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
+.text_co{
+    color: #326CF9;
+}
+
+
+.social_join_box{
+    max-width: 420px;
+    margin: 0 auto;
+    padding-top: 66px;
+    text-align: center;
+}
+
+.text_size{
+    font-size: 1.55em;
+    font-weight: 900;
+    line-height:26px;
+}
+
+.social_btn_box{
+    margin-top: 10px;
+}
+
+.top_btn_box{
+    margin-top: 36px;
+}
+
+.social_btn{
+    position: relative;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+    position: relative;
+    color: #fff;
+    width: 300px;
+    border: 0px;
+}
+.btn_wrap{
+    position: relative;
+}
+.logo_po{
+    position: absolute;
+    top: 11px;
+    left: 76px;
+    z-index: 100;
+}
+#naverIdLogin{
+    width: 30px;
+    height: 30px;
+    background: url(https://img.29cm.co.kr/next29cm/myedit_sns_icon_mo.png) no-repeat;
+    background-size: 203px 99px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-position:-9px -61px;
+}
+.naver_login{
+    background-color: #29B500;
+}
+
+
+#kakaoIdLogin{
+    width: 30px;
+    height: 30px;
+    background: url(https://img.29cm.co.kr/next29cm/myedit_sns_icon_mo.png) no-repeat;
+    background-size: 203px 99px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-position: -60px -61px;
+}
+.kakao_login{
+    background-color: #FFDF00;
+    color: #391B1B;
+}
+
+#googleIdLogin{
+    width: 30px;
+    height: 30px;
+    background: url(https://www.fassto.ai/fss/img-hp/goggle-login.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: 5.5px 3px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.google_login{
+    background-color: #FFF;
+    color: black;
+    border: .5px solid #CCCCCC;
+}
+
+/* 회원가입 컨텐츠 */
