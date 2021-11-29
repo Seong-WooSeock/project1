@@ -189,6 +189,14 @@ body{
 
 .er_mes_display{
     text-align: left;
+}
+
+.not_null{
+    color: #DC3545;
+    font-size: .8em;
+    font-weight: 700;
+    letter-spacing : .0018em;
+    padding-left: 63px;
     display: none;
 }
 
@@ -198,6 +206,7 @@ body{
     font-weight: 700;
     letter-spacing : .0018em;
     padding-left: 63px;
+    display: none;  
 }
 
 .delete_text{
@@ -209,7 +218,7 @@ body{
 
 .delete_text i{
     cursor: pointer;
-    color: #DC3545;
+    color: black;
 }
 /* input box  */
 
@@ -225,7 +234,9 @@ body{
     padding:10px 0 0 10px;
     font-size: 1.05em;
 }
-
+input[type = checkbox]{
+    cursor: pointer;
+}
  /* 약관 동의 */
 
  .join_btn_wrap{
@@ -242,4 +253,5 @@ body{
     height: 50px;
     position: relative;
     border: none;
+    cursor: pointer;
  }
