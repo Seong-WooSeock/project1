@@ -11,12 +11,12 @@
 
 <body>
     <div class="login_box">
-        <div class="login_container">
-            <form id="login_form">
+        <div class="login_container scroll_d">
+            <form id="login_form" method="post">
                 <div class="text_exit_wrap">
                     <div class="login_text_box">
-                        <span class="b_t">만나서 반가워요!</span><br>
-                        <span class="s_t">서비스 이용을 위해 로그인이 필요해요</span>
+                        <div><span class="b_t">만나서 반가워요!</span><br></div>
+                        <div><span class="s_t">서비스 이용을 위해 로그인이 필요해요</span></div>
                     </div>
                     <div class="login_exit_box">
                         <i class="fas fa-times exit_btn"></i>
@@ -26,29 +26,29 @@
                     <span class="sns_login_header">SNS 로그인</span>
                 </div>
                 <div class="sns_btn_box">
-                    <div class="naver_btn_box">
+                    <div class="naver_btn_box s_b_b">
                         <button type="button"><img src="https://cdn.fassto.ai/resources/img-hp/sns_naver.png"
-                                alt="naverLogo"><span>네이버</span></button>
+                                alt="naverLogo"> 네이버</button>
                     </div>
-                    <div class="kakao_btn_box">
+                    <div class="kakao_btn_box s_b_b">
                         <button type="button"><img src="https://cdn.fassto.ai/resources/img-hp/sns_kakao.png"
-                                alt="kakaoLogo"><span>카카오</span></button>
+                                alt="kakaoLogo"> 카카오</button>
                     </div>
-                    <div class="google_btn_box">
+                    <div class="google_btn_box s_b_b">
                         <button type="button"><img src="https://cdn.fassto.ai/resources/img-hp/sns_google.png"
-                                alt="googleLogo"><span>구글</span></button>
+                                alt="googleLogo"> 구글</button>
                     </div>
                 </div>
                 <div class="line_form"></div>
                 <div class="login_input_box">
                     <div class="id_box">
-                        <input type="text" name="user_id" class="id_ip" placeholder="이메일">
+                        <input type="email" name="user_id" class="lg_ip" placeholder="이메일">
                     </div>
                     <div class="pw_box">
-                        <input type="password" name="user_pw" class="pw_ip" placeholder="비밀번호">
+                        <input type="password" name="user_pw" class="lg_ip" id="pw_type" placeholder="비밀번호">
                         <div class="pw_icon_box">
-                            <i class="fas fa-eye-slash dp_pw"></i>
-                            <i class="fas fa-eye dp_none_pw"></i>
+                            <i class="fas fa-eye-slash" id="dp_pw"></i>
+                            <i class="fas fa-eye" id="dp_none_pw"></i>
                         </div>
                     </div>
                     <div class="rem_cb_box">
@@ -60,22 +60,46 @@
                 </div>
                 <div class="o_btn_box">
                     <div class="find_pw"><span>비밀번호 찾기</span></div>
-                    <div class="verti_line"></div>
                     <div class="join_email_btn"><a href="./join.html">이메일로 가입하기</a></div>
                 </div>
                 <div class="guide_detail_box">
-                    <span class="gu_de_text">sns 로그인 시 <a target="_blank"
+                    <span class="gu_de_text">SNS 로그인 시 <a target="_blank"
                             href="https://www.fassto.ai/view/serviceTerms-join">이용약관</a>,<a target="_blank"
-                            href="https://www.fassto.ai/view/privacy">개인정보처리방침</a>,<a target="_blank"
+                            href="https://www.fassto.ai/view/privacy"> 개인정보처리방침</a>,<br><a target="_blank"
                             href="https://www.fassto.ai/view/marketingTerms">마케팅
                             이용약관</a>에 동의하는 것으로
                         간주합니다.</span>
                 </div>
             </form>
-
         </div>
-
+        <div class="findPw_contaier">
+            <div class="find_pw_wrap">
+                <form method="get">
+                    <div class="fpw_header_exit">
+                        <div class="fpw_header">비밀번호 찾기</div>
+                        <div><i class="fas fa-times fpw_exit_btn"></i></div>
+                    </div>
+                    <div class="fpw_text">
+                        <div class="fpw_b_f">가입하신 이름과 이메일을 입력해주세요.</div>
+                        <div class="fpw_s_f">새로운 비밀번호를 보내드립니다.</div>
+                    </div>
+                    <div class="fpw_ip_box">
+                        <div class="fpw_id_ip">
+                            <input class="fpw_ip" name="user_id" type="email" placeholder="이메일" maxlength="20">
+                        </div>
+                        <div class="fpw_na_ip">
+                            <input class="fpw_ip" name="user_name" type="text" placeholder="이름" maxlength="5">
+                        </div>
+                    </div>
+                    <div class="fpw_sm_box">
+                        <button>임시 비밀번호 보내기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="opacity_st"></div>
     </div>
+
     <div class="container">
         <div class="ad_box">
             <div class="header_ad"></div>
@@ -179,7 +203,8 @@
                 </div>
                 <div class="navi_r_box">
                     <div class="navi_r_items">
-                        <div class="navi_items navi_items_r login_btn"><button type="button">로그인</button></div>
+                        <div class="navi_items navi_items_r login_btn"><button id="login_button"
+                                type="button">로그인</button></div>
                         <div class="text_bar"></div>
                         <div class="navi_items navi_items_r"><a href="#">견적문의</a></div>
                     </div>
