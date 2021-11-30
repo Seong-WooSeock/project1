@@ -106,6 +106,17 @@ header{
     cursor: pointer;
 }
 
+.navi_items button{
+    font-size: 1.115em;
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing : .0025em;
+    cursor: pointer;
+    background-color:#00855B;
+    border: none;
+}
+
 .icon_external{
     color: white;
     cursor: pointer;
@@ -219,3 +230,10 @@ header{
 }
 
 /* main-content-section 구현 */
+
+/* login 구현 */
+
+
+
+
+/* login 구현 */

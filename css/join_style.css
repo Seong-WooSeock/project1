@@ -87,39 +87,48 @@ body{
     color: #fff;
     width: 300px;
     border: 0px;
+    cursor: pointer;
 }
 .btn_wrap{
     position: relative;
 }
 .logo_po{
     position: absolute;
-    top: 11px;
-    left: 76px;
+    top: 12px;
+    left: 77px;
     z-index: 100;
+    cursor: pointer;
 }
 #naverIdLogin{
     width: 30px;
     height: 30px;
-    background: url(https://img.29cm.co.kr/next29cm/myedit_sns_icon_mo.png) no-repeat;
-    background-size: 203px 99px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-position:-9px -61px;
+    text-align: center;
 }
+
+#naverIdLogin img{
+    width: 25px;
+    height: 25px;
+}
+
 .naver_login{
     background-color: #29B500;
 }
 
+#kakao_box{
+    position: relative;
+}
 
 #kakaoIdLogin{
     width: 30px;
     height: 30px;
-    background: url(https://img.29cm.co.kr/next29cm/myedit_sns_icon_mo.png) no-repeat;
-    background-size: 203px 99px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-position: -60px -61px;
+    text-align: center;
 }
+
+#kakaoIdLogin img{
+    width: 25px;
+    height: 25px;
+}
+
 .kakao_login{
     background-color: #FFDF00;
     color: #391B1B;

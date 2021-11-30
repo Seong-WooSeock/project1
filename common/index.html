@@ -10,6 +10,72 @@
 </head>
 
 <body>
+    <div class="login_box">
+        <div class="login_container">
+            <form id="login_form">
+                <div class="text_exit_wrap">
+                    <div class="login_text_box">
+                        <span class="b_t">만나서 반가워요!</span><br>
+                        <span class="s_t">서비스 이용을 위해 로그인이 필요해요</span>
+                    </div>
+                    <div class="login_exit_box">
+                        <i class="fas fa-times exit_btn"></i>
+                    </div>
+                </div>
+                <div class="sns_login_text">
+                    <span class="sns_login_header">SNS 로그인</span>
+                </div>
+                <div class="sns_btn_box">
+                    <div class="naver_btn_box">
+                        <button type="button"><img src="https://cdn.fassto.ai/resources/img-hp/sns_naver.png"
+                                alt="naverLogo"><span>네이버</span></button>
+                    </div>
+                    <div class="kakao_btn_box">
+                        <button type="button"><img src="https://cdn.fassto.ai/resources/img-hp/sns_kakao.png"
+                                alt="kakaoLogo"><span>카카오</span></button>
+                    </div>
+                    <div class="google_btn_box">
+                        <button type="button"><img src="https://cdn.fassto.ai/resources/img-hp/sns_google.png"
+                                alt="googleLogo"><span>구글</span></button>
+                    </div>
+                </div>
+                <div class="line_form"></div>
+                <div class="login_input_box">
+                    <div class="id_box">
+                        <input type="text" name="user_id" class="id_ip" placeholder="이메일">
+                    </div>
+                    <div class="pw_box">
+                        <input type="password" name="user_pw" class="pw_ip" placeholder="비밀번호">
+                        <div class="pw_icon_box">
+                            <i class="fas fa-eye-slash dp_pw"></i>
+                            <i class="fas fa-eye dp_none_pw"></i>
+                        </div>
+                    </div>
+                    <div class="rem_cb_box">
+                        <input type="checkbox"><span> 아이디 저장</span>
+                    </div>
+                </div>
+                <div class="submit_btn_box">
+                    <button class="lo_su_btn">로그인</button>
+                </div>
+                <div class="o_btn_box">
+                    <div class="find_pw"><span>비밀번호 찾기</span></div>
+                    <div class="verti_line"></div>
+                    <div class="join_email_btn"><a href="./join.html">이메일로 가입하기</a></div>
+                </div>
+                <div class="guide_detail_box">
+                    <span class="gu_de_text">sns 로그인 시 <a target="_blank"
+                            href="https://www.fassto.ai/view/serviceTerms-join">이용약관</a>,<a target="_blank"
+                            href="https://www.fassto.ai/view/privacy">개인정보처리방침</a>,<a target="_blank"
+                            href="https://www.fassto.ai/view/marketingTerms">마케팅
+                            이용약관</a>에 동의하는 것으로
+                        간주합니다.</span>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
     <div class="container">
         <div class="ad_box">
             <div class="header_ad"></div>
@@ -113,7 +179,7 @@
                 </div>
                 <div class="navi_r_box">
                     <div class="navi_r_items">
-                        <div class="navi_items navi_items_r login_btn"><a href="#">로그인</a></div>
+                        <div class="navi_items navi_items_r login_btn"><button type="button">로그인</button></div>
                         <div class="text_bar"></div>
                         <div class="navi_items navi_items_r"><a href="#">견적문의</a></div>
                     </div>
@@ -162,6 +228,8 @@
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/39caf77dda.js" crossorigin="anonymous"></script>
+    <script src="../js/login_findpw_event.js"></script>
+    <script src="../js/main_event.js"></script>
 </body>
 
 </html>
