@@ -20,6 +20,7 @@ a{
     width: 100%;
     display: flex;
     top: 0;
+    cursor: pointer;
 }
 
 /* 헤더 구현 */
@@ -86,13 +87,13 @@ header{
     width: 100%;
 }
 .header_wrap{
-    margin-top: -10px;
+    margin-top: -5px;
     height: 75px;
     position: relative;
     background-color: #00855B;
     display: flex;
     justify-content: space-between;
-    z-index: 9999;
+    z-index: 994;
 }
 
 .logo_box{
@@ -109,7 +110,6 @@ header{
 .logo_img{
     width: 110px;
     filter :brightness(0) invert(1);
-    
 }
 
 .navi_l_box{
@@ -121,6 +121,7 @@ header{
 }
 
 .navi_items{
+    position: relative;
     padding: 0 40px 0 0;
 }
 .navi_items span{
@@ -149,7 +150,39 @@ header{
     background-color:#00855B;
     border: none;
 }
+.header_dropdown{
+    display: none;
+}
+.hd_ser_dd{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
 
+.all_list{
+    width: 150px;
+    display: block;
+    background-color: white;
+    list-style: none;
+    text-align: left;
+    padding: 15px 0;
+    border-radius: 12px;
+}
+
+.list_sty{
+    display: flex;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    justify-content: space-between;
+    color: #666666;
+}
+.list_sty:hover{
+    background-color: #F2F4F6;
+    color: #00855B;
+}
 .icon_external{
     color: white;
     cursor: pointer;
@@ -157,9 +190,7 @@ header{
     font-weight: 100;
 }
 
-.header_dropdown{
-    display: none;
-}
+
 
 .navi_r_box{
     display: flex;
