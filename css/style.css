@@ -15,32 +15,21 @@ a{
     margin: 0;  
 }
 
-.ad_box{
+.ad_wrapper{
     position: absolute;
     width: 100%;
-    height:90px;
     display: flex;
     top: 0;
-    
 }
+
 /* 헤더 구현 */
+
 .header_ad{
     text-align: center;
+    box-sizing: border-box;
     width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.ad4{
-    background: url(https://cdn.fassto.ai/resources/imagesHome/topRibbon_bg1.png) no-repeat center, linear-gradient(
-    180deg, #282E44 0%, #454E71 100%);
-    background-size: auto 100%;
-    display: block;
-    left: 0;
-    margin: 0;
     padding: 20px;
 }
-
 .head_text{
     font-size: 1.75em;
     font-weight: 900;
@@ -51,16 +40,59 @@ a{
     font-weight: 500;
     color: white;
 }
+/*  광고 상자  */
+.ad1{
+    background: #E8F3FF;
+}
+.ad1_h{
+    color: #3182F6;
+    font-size: 1.45em;
+}
+.ad1_s{
+    color: #67737C;
+}
+.ad2{
+    background: url("https://cdn.fassto.ai/resources/imagesHome/navTop_05.png") no-repeat center bottom, #EAFDE8;
+    background-size: auto 100%;
+}
+.ad2_h{
+    color: #00855B;
+    font-size: 1.6em;
+}
+.ad2_s{
+    color: #67737C;
+}
+.ad3{
+    background-color: #FFF9C4;
+    background-size: auto 100%;
+}
+.ad3_h{
+    color: #F57F17;
+    font-size: 1.5em;
+}
+.ad3_s{
+    color: #67737C;
+}
+
+.ad4{
+    background: url(https://cdn.fassto.ai/resources/imagesHome/topRibbon_bg1.png) no-repeat center, linear-gradient(
+    180deg, #282E44 0%, #454E71 100%);
+    background-size: auto 100%;
+}
+
+/*  광고 상자  */
+
 header{
     width: 100%;
 }
 .header_wrap{
-    margin-top: 90px;
+    margin-top: -10px;
     height: 75px;
     position: relative;
     background-color: #00855B;
     display: flex;
     justify-content: space-between;
+    z-index: 9999;
 }
 
 .logo_box{

@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>네이버 공식 풀필먼트 | 파스토</title>
     <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -101,14 +105,29 @@
     </div>
 
     <div class="container">
-        <div class="ad_box">
-            <div class="header_ad"></div>
-            <div class="header_ad"></div>
-            <div class="header_ad"></div>
-            <div class="header_ad ad4">
-                <span class="head_text"> 새벽배송 OPEN</span>
-                <br>
-                <span class="small_text">새벽배송으로 식품을 빠르고 신선하게! 오픈 특가로 이용하세요.</span>
+        <div class="swiper-container ad_box">
+            <div class="swiper-wrapper ad_wrapper">
+                <div class="header_ad ad1 swiper-slide">
+                    <span class="head_text ad1_h">NEWS 기술 혁신형 중소기업(INNO-BIZ) A등급 획득!</span>
+                    <br>
+                    <span class="small_text ad1_s">이노비즈 심사에서 기술 경쟁력을 인정받았습니다.</span>
+                </div>
+                <div class="header_ad ad2 swiper-slide">
+                    <span class="head_text ad2_h">파스토셀프 beta 런칭</span>
+                    <br>
+                    <span class="small_text ad2_s">무료 주문&재고 관리 솔루션</span>
+                </div>
+                <div class="header_ad ad3 swiper-slide">
+                    <span class="head_text ad3_h"><i class="fas fa-carrot"></i> EVENT 신규 가입 혜택 <i
+                            class="fas fa-carrot"></i></span>
+                    <br>
+                    <span class="small_text ad3_s">입고비 무료 + 자동주문연동 0원</span>
+                </div>
+                <div class=" header_ad ad4 swiper-slide">
+                    <span class="head_text ad4_h"> 새벽배송 OPEN</span>
+                    <br>
+                    <span class="small_text ad4_s">새벽배송으로 식품을 빠르고 신선하게! 오픈 특가로 이용하세요.</span>
+                </div>
             </div>
         </div>
         <header>
