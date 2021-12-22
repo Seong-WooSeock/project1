@@ -693,10 +693,85 @@ header{
     font-size: 1em;
     padding: 13px 16px;
     background-color: #FDD835;
-    border: #00855B;
+    border: #b8d8ce;
     border-radius: 8px;
 }
 .intro_cont{
-    height: 300px;
+    height: 100%;
+    text-align: center;
+}
+.intro_text{
+    position: relative;
+    padding: 120px 0 120px;
+    color: #191F28;
+    font-size: 2em;
+    font-weight: 900;
+}
+.green-highlight{
+    position: relative;
+    z-index: -1;
+}
+.highlight{
+    position: absolute;
+    left: -1%;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #00A66120;
+    border-radius: 30px;
+    z-index: -2;
+    display: inline-block;
+}
+
+.sub_intro_cont{
+    text-align: center;
+}
+
+.sub_intro_cont_wrap{
+    background-color: #EBF5F2;
+    width: 100%;
+    height: 100%;
+    padding: 120px 0 120px;
+}
+.sub_int_hd_box{
+    padding: 20px 0 40px 225px;
+    text-align: left;
+}
+
+.dg_box{
+    height: 612px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 70px 0 40px;
+    margin: 0 225px;
+    position: relative;
+    background-color: #00855B;
+    border-radius: 30px;
+}
+.dg_text_btn{
+    width: 35%;
+    height: 612px;
+    padding: 40px 40px 0 40px;
+}
+.sub_int_hd_st{
+    color: #00A661;
+    font-weight: 900;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+.sub_int_hd_bt{
+    font-weight: 900;
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+.dg_img_box{
+    width: 65%;
+}
+
+.dg_img{
+    width: 100%;
+    height: auto;
 }
 /* main-content-section 구현 */

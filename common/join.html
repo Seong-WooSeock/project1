@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <header>
+        <header class="header">
             <div class="header_wrap">
                 <div class="logo_box">
                     <a href="./index.html">
@@ -21,21 +21,26 @@
                 </div>
                 <div class="navi_l_box">
                     <div class="navi_items">
-                        <span>서비스 소개</span>
-                        <div class="header_dropdown">
-                            <ul class="all_list">
-                                <li class="list_sty">
-                                    특장점
-                                </li>
-                                <li class="list_sty">
-                                    국내 풀필먼트
-                                </li>
-                                <li class="list_sty">
-                                    해외 풀필먼트
-                                </li>
-                            </ul>
+                        <span class="n_i_span">서비스</span>
+                        <div class="hd_ser_dd">
+                            <div class="all_list_wrap">
+                                <ul class="all_list">
+                                    <li class="list_sty">
+                                        <div>특장점</div>
+                                        <div>></div>
+                                    </li>
+                                    <li class="list_sty">
+                                        <div>국내 풀필먼트</div>
+                                        <div>></div>
+                                    </li>
+                                    <li class="list_sty">
+                                        <div>해외 풀필먼트</div>
+                                        <div>></div>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="header_dropdown_wrap">
-                                <ul class="list_items">
+                                <ul class="list_items ser_li_it">
                                     <li class="list_sty">
                                         주요기능
                                     </li>
@@ -52,7 +57,7 @@
 
                                     </li>
                                 </ul>
-                                <ul class="list_items">
+                                <ul class="list_items ser_li_it">
                                     <li class="list_sty">
                                         주문연동X자동출고
                                     </li>
@@ -69,7 +74,7 @@
                                         쿠팡쉽먼트
                                     </li>
                                 </ul>
-                                <ul class="list_items">
+                                <ul class="list_items ser_li_it">
                                     <li class="list_sty">
                                         주문연동X자동출고
                                     </li>
@@ -83,35 +88,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="navi_items"> <a href="#">고객 후기</a></div>
-                    <div class="navi_items"><a href="#">이벤트</a></div>
-                    <div class="navi_items"><a href="#">요금안내</a></div>
+                    <div class="navi_items"><a class="n_i_a" href="#">고객 후기</a></div>
+                    <div class="navi_items"><a class="n_i_a" href="#">이벤트</a></div>
+                    <div class="navi_items"><a class="n_i_a" href="#">요금안내</a></div>
                     <div class="navi_items">
-                        <span>고객지원</span>
-                        <div class="header_dropdown">
-                            <ul class="list_items">
-                                <li>1:1문의</li>
-                                <li>자주 묻는 질문</li>
-                                <li>뉴스레터</li>
-                                <li>파스토 아카데미</li>
+                        <span class="n_i_span">고객지원</span>
+                        <div class="hd_ser_dd hd_block">
+                            <ul class="list_items list_o_items">
+                                <li class="list_sty">1:1문의</li>
+                                <li class="list_sty">자주 묻는 질문</li>
+                                <li class="list_sty">뉴스레터</li>
+                                <li class="list_sty">파스토 아카데미</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="navi_items"><a href="#">회사소개 </a><i class="fas fa-external-link-alt icon_external"></i>
+                    <div class="navi_items"><a class="n_i_a" href="#">채용 </a><i
+                            class="fas fa-external-link-alt icon_external"></i>
                     </div>
-                    <div class="navi_items"><a href="#">채용 </a><i class="fas fa-external-link-alt icon_external"></i>
+                    <div class="navi_items"><a class="n_i_a" href="#">파스토셀프 <span id="new_menu">NEW</span></a>
                     </div>
                 </div>
                 <div class="navi_r_box">
                     <div class="navi_r_items">
-                        <div class="navi_items navi_items_r login_btn"><a href="#">로그인</a></div>
+                        <div class="navi_items navi_items_r login_btn"><button id="login_button"
+                                type="button">로그인</button></div>
                         <div class="text_bar"></div>
-                        <div class="navi_items navi_items_r"><a href="#">견적문의</a></div>
+                        <div class="navi_items navi_items_r"><a class=" n_i_ao">견적문의</a></div>
                     </div>
                     <a href="#" class="navi_item_btn">서비스 신청하기</a>
                 </div>
-                <div class="haeder_img"></div>
-                <div class="header_box"></div>
             </div>
         </header>
         <div class="content">
@@ -164,7 +169,7 @@
             <div class="or_text">또는</div>
         </div>
         <section class="social_join_box">
-            <form action="/FASSTO/signup/id" method="post">
+            <form class="join_form" action="/FASSTO/signup/id" method="post">
                 <div class="input_wrap">
                     <input class="input_st" type="email" placeholder="이메일" maxlength="20" name="user_id">
                     <div class="delete_text">
@@ -241,6 +246,7 @@
         </footer>
     </div>
     <script src="../js/join_event.js"></script>
+    <script src="../js/login_findpw_event.js"></script>
     <script src="https://kit.fontawesome.com/39caf77dda.js" crossorigin="anonymous"></script>
 </body>
 

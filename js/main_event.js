@@ -17,8 +17,23 @@ let ser_li_it = document.querySelectorAll('.ser_li_it');
 let header_dropdown_wrap = document.querySelector('.header_dropdown_wrap');
 let list_o_items = document.querySelector('.list_o_items');
 
+let ad_box = document.querySelector('.ad_box');
+let header_wrap = document.querySelector('.header_wrap');
+let logo_img = document.querySelector('.logo_img');
+let n_i_span = document.querySelectorAll('.n_i_span');
+let n_i_a = document.querySelectorAll('.n_i_a');
+let icon_external = document.querySelector('.icon_external');
+let new_menu = document.getElementById('new_menu');
+let l_b = document.getElementById('login_button');
+let text_bar = document.querySelector('.text_bar');
+let n_i_ao = document.querySelector('.n_i_ao');
+let navi_item_btn = document.querySelector('.navi_item_btn');
+
 let bl = 'block';
 let no = 'none';
+
+let bfPosition = document.documentElement.scrollTop;
+
 
 function li_hover(o1,o2,o3,o4) {
     header_dropdown_wrap.style.display = o1;
@@ -33,7 +48,11 @@ function none_display(num) {
         list_o_items.style.display = 'none';
     }
 }
-
+function colorRepeat(varName ,val) {
+    for (let i = 0; i < varName.length; i++){
+        varName[i].style.color = val;
+    }
+}
 
 navi_items[0].onmouseover = () => {
     hd_ser_dd.style.display = 'flex';
@@ -67,27 +86,15 @@ navi_items[4].onmouseover = () => {
         hd_block.style.display = 'none';
         list_o_items.style.display = 'none';
     }
+    hd_block.onmouseout = () => {
+        hd_block.style.display = 'none';
+        list_o_items.style.display = 'none';
+    }
     none_display(3);
     none_display(5);
-}
-
-let ad_box = document.querySelector('.ad_box');
-let header_wrap = document.querySelector('.header_wrap');
-let logo_img = document.querySelector('.logo_img');
-let n_i_span = document.querySelectorAll('.n_i_span');
-let n_i_a = document.querySelectorAll('.n_i_a');
-let icon_external = document.querySelector('.icon_external');
-let new_menu = document.getElementById('new_menu');
-let l_b = document.getElementById('login_button');
-let text_bar = document.querySelector('.text_bar');
-let n_i_ao = document.querySelector('.n_i_ao');
-let navi_item_btn = document.querySelector('.navi_item_btn');
-
-let bfPosition = document.documentElement.scrollTop;
-
-function colorRepeat(varName ,val) {
-    for (let i = 0; i < varName.length; i++){
-        varName[i].style.color = val;
+    ad_box.onmouseover = () => {
+        hd_block.style.display = 'none';
+        list_o_items.style.display = 'none';
     }
 }
 

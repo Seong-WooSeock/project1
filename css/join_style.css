@@ -30,7 +30,10 @@ body{
 .icon_external{
     color: #4E5968;
 }
-
+#login_button{
+    color: #4E5968;
+    background-color: #FFFFFF;
+}
 
  /* 회원가입 컨텐츠 */
 .guide_text_box{
